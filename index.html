@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table Output</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <br />
+    <h1>Student Information</h1><hr><br>
+
+    <!-- Inputs from User  -->
+    <div class="inputs">
+
+        <input type="text" placeholder="Name" id="name">
+        <input type="number" placeholder="Roll Number" id="rollNum">
+        <input type="number" placeholder="HTML Score" id="html" >
+        <input type="number" placeholder="CSS Score" id="css">
+
+    </div> 
+
+    <!-- Buttons  -->
+    <div class="buttons">
+
+        <button class="submit big" onclick="studentsData()">Submit</button>
+        <button class="Remove big" onclick="removeAll()">Remove All</button>
+
+        <div class="two">
+
+            <button class="First short" onclick="removeFirst()">Remove First</button>
+            <button class="Last short" onclick="removeLast()">Remove Last</button>
+            
+        </div>
+        
+    </div> <br> <hr>
+
+    <br />
+    <h1>Student's Data</h1> 
+
+    <!-- Table  -->
+    <table>
+
+        <tr>
+            <th>S No.</th>
+            <th>Name</th>
+            <th>Roll Number</th>
+            <th>HTML Score</th>
+            <th>CSS Score</th>
+            <th>Performance %</th>
+
+        </tr>
+
+        <tr>
+
+            <td id="1:1"></td>
+            <td id="name1"></td>
+            <td id="rollnum1"></td>
+            <td id="html1"></td>
+            <td id="css1"></td>
+            <td id="perf1"></td>
+
+        </tr>
+ 
+        <tr>
+
+            <td id="2:1"></td>
+            <td id="name2"></td>
+            <td id="rollnum2"></td>
+            <td id="html2"></td>
+            <td id="css2"></td>
+            <td id="perf2"></td>
+
+        </tr> 
+ 
+        <tr>
+
+            <td id="3:1"></td>
+            <td id="name3"></td>
+            <td id="rollnum3"></td>
+            <td id="html3"></td>
+            <td id="css3"></td>
+            <td id="perf3"></td>
+
+        </tr> 
+ 
+        <tr>
+
+            <td id="4:1"></td>
+            <td id="name4"></td>
+            <td id="rollnum4"></td>
+            <td id="html4"></td>
+            <td id="css4"></td>
+            <td id="perf4"></td>
+
+        </tr> 
+ 
+        <tr>
+
+            <td id="5:1"></td>
+            <td id="name5"></td>
+            <td id="rollnum5"></td>
+            <td id="html5"></td>
+            <td id="css5"></td>
+            <td id="perf5"></td>
+
+        </tr> 
+
+    </table>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
